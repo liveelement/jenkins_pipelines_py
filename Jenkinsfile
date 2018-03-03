@@ -8,7 +8,7 @@ pipeline {
         }
 	    stage('Run docker container') {
             steps {
-                sh 'docker run -d test-build'
+                sh 'docker run -p -d test-build'
             }
         }
     }
